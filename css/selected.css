@@ -1,0 +1,163 @@
+html, body{
+	 font-size: 41.4px;
+	background-color: #f5f5f5;
+}
+html, body, img, ul, li, span, p{
+	margin:0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.main{
+	margin-top: 1.2rem;
+}
+.head{
+	font-size: 0;
+    width: 100%;
+    height: 0.93333rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+}
+.left{
+	position: relative;
+    display: inline-block;
+    width: 33.333%;
+    text-align: center;
+    color: #040000;
+    line-height: 0.93333rem;
+    font-size: 0.37333rem;
+}
+.left::after{
+	position: absolute;
+    right: 0.48rem;
+    top: 0.4rem;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #040000;
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+}
+.left span{    
+	position: absolute;
+    right: 0;
+    top: 0.2rem;
+    display: inline-block;
+    height: 0.53333rem;
+    width: 1px;
+    background: #dde2f0
+}
+.gray{
+	width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+}
+.tar{
+	font-size: 0;
+    position: fixed;
+    top: 0.93333rem;
+    width: 100%;
+    padding: 0.05333rem 2%;
+    background: #fff;
+    border-top: 1px solid #dde2f0;
+}
+.tar span{
+	display: inline-block;
+    width: 20%;
+    text-align: center;
+    margin: 0.10667rem 2%;
+    height: 1.06667rem;
+    line-height: 1.06667rem;
+    background: #f5f5f5;
+    color: #333;
+    font-size: 0.35333rem;
+    border-radius: 0.10667rem;
+}
+.teacher-infor{
+	background: #fff;
+    height: 2.93333rem;
+    padding-left: 2.93333rem;
+    position: relative;
+    margin-bottom: 0.26667rem;
+}
+.teacher-infor img{
+	position: absolute;
+    left: 0.4rem;
+    top: 0.4rem;
+    width: 2.13333rem;
+    height: 2.13333rem;
+}
+.teacher-details{
+	height: 2.93333rem;
+    font-size: 0;
+}
+.details{
+	width: 100%;
+    display: inline-block;
+    margin-top: 0.48rem;
+}
+.name{
+	font-size: 0.4rem;
+    color: #262323;
+}
+.sub, .grade{
+	font-size: 0.32rem;
+    display: inline-block;
+    padding: 0 0.10667rem;
+    border-radius: 0.08rem;
+    margin-left: 0.10667rem
+}
+.sub{
+    color: #fff;
+    background: #52c644;
+    border: 1px solid #52c644;
+}
+.grade{
+    border: 1px solid #097c25;
+    color: #097c25;
+}
+.times{
+	font-size: 0.34667rem;
+    color: #888;
+    float: right;
+    margin-right: 0.4rem;
+    margin-top: 0.10667rem;
+}
+.teach-age{
+	margin-top: 0.13333rem;
+}
+.t-age{
+    font-size: 0.34667rem;
+    color: #888;
+}
+.kind{
+	position: absolute;
+    bottom: 0.4rem;
+}
+.t-kind{
+	font-size: 0.34667rem;
+    color: #262323;
+    margin-left: 0.10667rem;
+    display: inline-block;
+    padding-left: 0.42667rem;
+    background-image: url(../images/authentication.png);
+    background-repeat: no-repeat;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0rem 0.05333rem;
+}
+.main .selected{
+    color: green;
+}
+.main .selected::after{
+    border-top: 4px solid green;
+
+}

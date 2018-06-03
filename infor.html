@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/infor.css">
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"> -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>知途教育--教师详情</title>
+</head>
+<body>
+	<div id="app">
+		<div class="main">
+			<div class="head">
+				<div class="teacher-infor">
+    				<img :src="teacherList.image">
+    				<div class="teacher-details">
+    					<p class="details">
+    						<span class="name">{{ teacherList.name }}</span>
+    						<span class="sub" v-for="it in teacherList.subject">{{ it.label }}</span>
+    						<span class="grade" v-for="it in teacherList.grade">{{ it.label }}</span>
+    						<span class="price">{{ teacherList.price }}</span>
+    					</p>
+    					<p class="teach-age">
+    						<span class="t-age">{{ teacherList.teach_year }}年教龄</span>
+    					</p>
+    					<p class="kind">
+    						<span class="t-kind" v-for="it in teacherList.type">{{ it.label }}</span>
+    						
+    					</p><span class="times">已授课{{ teacherList.teach_time }}小时</span>
+    				</div>
+    			</div>
+			</div>
+			<div class="introduction">
+				<div class="vita">
+					<div class="vita-tittle in-ti">个人简介</div>
+					<div class="more">
+						<p> {{ teacherList.intro}}</p>
+					</div>
+				</div>
+				<div class="experience">
+					<div class="experience-tittle in-ti">教学经历</div>
+					<div class="more mores" v-for="item in teacherList.teacher_experience">
+						<p class="short-tittle">{{ item.title }}</p>
+						<p>{{ item.content }}</p>
+					</div>
+				</div>
+				<div class="case">
+					<div class="case-tittle in-ti">成功案例</div>
+					<div class="more mores" v-for="item in teacherList.teacher_case">
+						<p class="short-tittle">{{ item.title }}</p>
+						<p>{{ item.content}}</p>
+					</div>
+				</div>
+			</div>
+			<div class="satisfied">
+				<div class="sat">满意就预约吧</div>
+				<hr>
+			</div>
+			<div class="collection">
+				<div class="collect b-t"><span>收藏</span></div>
+				<div class="appointment b-t">预约试讲</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/vue.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/infor.js"></script>
+</body>
+</html>

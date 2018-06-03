@@ -1,0 +1,191 @@
+html, body{
+     font-size: 41.4px;
+    background-color: #f5f5f5;
+}
+html, body, img, span, p, hr{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::after{
+    display: block;
+    clear: both;
+    content: "";
+    height: 0;
+}
+.teacher-infor{
+	background: #fff;
+    height: 2.93333rem;
+    padding-left: 2.93333rem;
+    position: relative;
+    margin-bottom: 0.26667rem;
+}
+.teacher-infor img{
+	position: absolute;
+    left: 0.4rem;
+    top: 0.4rem;
+    width: 2.13333rem;
+    height: 2.13333rem;
+}
+.teacher-details{
+	height: 2.93333rem;
+    font-size: 0;
+}
+.details{
+	width: 100%;
+    display: inline-block;
+    margin-top: 0.48rem;
+}
+.name{
+	font-size: 0.4rem;
+    color: #262323;
+}
+.sub, .grade{
+	font-size: 0.32rem;
+    display: inline-block;
+    padding: 0 0.10667rem;
+    border-radius: 0.08rem;
+    margin-left: 0.10667rem
+}
+.sub{
+    color: #fff;
+    background: #52c644;
+    border: 1px solid #52c644;
+}
+.grade{
+    border: 1px solid #097c25;
+    color: #097c25;
+}
+.price{
+    font-size: 0.34667rem;
+    color: #ee4034;
+    float: right;
+    margin-right: 0.4rem;
+}
+.teach-age{
+	margin-top: 0.13333rem;
+}
+.t-age{
+    font-size: 0.34667rem;
+    color: #888;
+}
+.kind{
+    width: 100%;
+	position: absolute;
+    bottom: 0.4rem;
+}
+.t-kind{
+	font-size: 0.34667rem;
+    color: #262323;
+    margin-left: 0.10667rem;
+    display: inline-block;
+    padding-left: 0.42667rem;
+    background-image: url(../images/authentication.png);
+    background-repeat: no-repeat;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0rem 0.05333rem;
+}
+.times{
+    font-size: 0.34667rem;
+    color: #888;
+    float: right;
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0.4rem;
+}
+.introduction{
+    background: #fff;
+    padding: 0.4rem 0 0.18667rem 0;
+    margin-bottom: 0.26667rem;
+}
+.vita, .experience, .case{
+    padding: 0 0.4rem;
+    font-size: 0;
+}
+.vita-tittle{
+    background-image: url(../images/vita.png);
+}
+.experience-tittle{
+    background-image: url(../images/experience.png);
+}
+.case-tittle{
+    background-image: url(../images/case.png);
+}
+.in-ti{
+    font-size: 0.4rem;
+    color: #262323;
+    display: inline-block;
+    padding-left: 0.48rem;
+    background-repeat: no-repeat;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0 0.05333rem;
+}
+.more{
+    padding: 0.21333rem 0 0.21333rem 0.4rem;
+    font-size: 0.34667rem;
+    color: #888;
+}
+.mores{
+    border-bottom: 1px solid #d8dded;
+}
+.mores:last-child{
+    border-bottom: 0px solid #d8dded;
+}
+.short-tittle{
+    font-size: 0.34667rem;
+    color: #2b2b2b
+}
+.satisfied{
+    width: 60%;
+    position: relative;
+    margin: 0.8rem auto 2.13333rem auto;
+}
+.sat{
+    color: #9e9c9c;
+    position: absolute;
+    top: -0.26667rem;
+    left: 1.6rem;
+    font-size: 0.4rem;
+    background: #f5f5f5;
+    padding: 0 0.21333rem;
+}
+hr{
+    display: block;
+    border-top: 1px solid #9e9c9c;
+    height: 1px;
+}
+.collection{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0;
+}
+.b-t{
+    display: inline-block;
+    font-size: 0.4rem;
+    color: #fff;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    text-align: center;
+}
+.collect{
+    width: 15%;
+    background: #49a775;
+    background-image: url(../images/collection.png);
+    background-repeat: no-repeat;
+    background-size: 0.53333rem 0.53333rem;
+    background-position: 0.48rem 0.16rem;
+}
+.collect span{
+    position: relative;
+    left: -0.15rem;
+    bottom: -0.3rem;
+
+}
+.appointment{
+    width: 85%;
+    background: #2dc072;
+}
+
